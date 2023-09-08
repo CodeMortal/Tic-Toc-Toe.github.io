@@ -1,0 +1,35 @@
+:root {
+    --board-background: none;
+    --border-color: #f6546a;
+    --border-thickness: 5px;
+}
+
+.board {
+    width: 30vw;
+    height: 50%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    box-sizing: border-box;
+
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: khaki;
+    font-family: 'Bellefair', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4.5rem;
+    /* You can adjust the font size as needed */
+    border: var(--border-thickness) dashed var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

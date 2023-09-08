@@ -1,0 +1,68 @@
+/* home.css */
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    box-sizing: border-box;
+    background-color: rgba(9, 0, 0, 0.987);
+
+
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: white;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+.player1 input,
+.player2 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10%;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.player1 input:focus,
+.player2 input:focus {
+    border-color: #f6546a;
+}
+
+.start {
+    background-color: #f6546a;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start:hover {
+    background-color: #d14a5f;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
